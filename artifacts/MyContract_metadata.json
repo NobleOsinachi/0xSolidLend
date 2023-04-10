@@ -1,0 +1,80 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "get",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_value",
+						"type": "string"
+					}
+				],
+				"name": "set",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"custom:dev-run-script": "file_path",
+			"details": "This is a Solidity smart contract written in the Ethereum blockchain programming language. It is named \"MyContract\" and contains two functions, \"set\" and \"get\", which allow a user to set and retrieve a string value, respectively. The contract is licensed under the MIT License and includes a custom development script that can be run with the command \"dev-run-script file_path\". When the contract is deployed, the initial value of the string is set to \"default value\".",
+			"kind": "dev",
+			"methods": {},
+			"title": "MyContract",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"MyContract.sol": "MyContract"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"MyContract.sol": {
+			"keccak256": "0xbaa4b42a3dccb6e10db5f8aabf5d7c339541a8a8aa271f37862bfad494923f47",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4e705202aef4bdf71973db203204722d123f9064f5c74115495861c30e329890",
+				"dweb:/ipfs/QmfQh7RZRZJ2UcqEJou8jf74jkTrL4qrn4aB4kBCespH6S"
+			]
+		}
+	},
+	"version": 1
+}
