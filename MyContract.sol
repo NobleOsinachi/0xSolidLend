@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >0.4.24;
+pragma solidity >0.5.1;
 
 /**
  * @title MyContract
@@ -7,17 +7,48 @@ pragma solidity >0.4.24;
  * @custom:dev-run-script file_path
  */
 contract MyContract {
-    string value;
+    //works for get and set
+    string public value = "my default value"; // value;
+    string public stringValue = "my default value"; // value;
+    bool public myBool = true;
+    int256 age = -24;
+    int256 temp =
+        33333333333333333333333333333333333333333333333333333333333333333333333333332;
+
+    //only get, use const
+    // string public constant value = "my default value";// value;
+
+    // constructor() {
+    //     value = "my defaultValue";
+    // }
+
+    // function get() public view returns (string memory) {
+    //     return value;
+    // }
+
+    // function set(string memory _value) public {
+    //     value = _value;
+    // }
+
+    enum State {
+        Waiting,
+        Ready,
+        Active,
+        Inactive,
+        Closed
+    }
+
+    State public state;
 
     constructor() {
-        value = "myValue";
+        state = State.Waiting;
     }
 
-    function get() public view returns (string memory) {
-        return value;
+    function activate() public returns (string memory) {
+        state = State.Active;
+        return "Activation successful!";
     }
-
-    function set(string memory _value) public {
-        value = _value;
+    function isActive() public view returns (bool){
+        return state==State.Active;
     }
 }

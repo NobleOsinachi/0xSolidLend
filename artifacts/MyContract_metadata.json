@@ -12,7 +12,59 @@
 			},
 			{
 				"inputs": [],
-				"name": "get",
+				"name": "activate",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isActive",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "myBool",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "state",
+				"outputs": [
+					{
+						"internalType": "enum MyContract.State",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "stringValue",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -24,16 +76,16 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
+				"inputs": [],
+				"name": "value",
+				"outputs": [
 					{
 						"internalType": "string",
-						"name": "_value",
+						"name": "",
 						"type": "string"
 					}
 				],
-				"name": "set",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -68,11 +120,11 @@
 	},
 	"sources": {
 		"MyContract.sol": {
-			"keccak256": "0xf1a4a28a3dd64dee4b11b4eb7c2542e7b22f9863de62ff62a58b4dc6d792d0b5",
+			"keccak256": "0xe59a9eabc3cbbeea6ab69cdeff1815f0a32f88f22c463b0231e996932451b1ca",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ef39ac5553f2e9e1b2ab0c7c69fb46a20ad3d90dbd9f94e03a689f71726a661d",
-				"dweb:/ipfs/QmWrZT2SSpaF1zodKCk2P1ELykvhs5waavCDyssUkCMozq"
+				"bzz-raw://bc5b41ae57ad4020e9b2515472415806ccee0e70c7a63f30e7b365061109c953",
+				"dweb:/ipfs/QmNdAdfEqAYPzifSynib4MnxeH9TNdwK6UhxnWmXaPx6wy"
 			]
 		}
 	},
