@@ -24,6 +24,24 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_firstName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_lastName",
+						"type": "string"
+					}
+				],
+				"name": "addPerson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "isActive",
 				"outputs": [
@@ -44,6 +62,43 @@
 						"internalType": "bool",
 						"name": "",
 						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "people",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "_firstName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_lastName",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "peopleCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -120,11 +175,11 @@
 	},
 	"sources": {
 		"MyContract.sol": {
-			"keccak256": "0xe59a9eabc3cbbeea6ab69cdeff1815f0a32f88f22c463b0231e996932451b1ca",
+			"keccak256": "0x8ac92139ad258541458ae23a8101bb0b2985027f1c6bc350c14106160623406e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bc5b41ae57ad4020e9b2515472415806ccee0e70c7a63f30e7b365061109c953",
-				"dweb:/ipfs/QmNdAdfEqAYPzifSynib4MnxeH9TNdwK6UhxnWmXaPx6wy"
+				"bzz-raw://e6cddf127338ccbbe8c2d9b7655f9980c8dd4ea4b57ea86a2daa433e01162b12",
+				"dweb:/ipfs/QmRGEcHMpHX1jM72fpWBzDEEQsPS5gmAnekeDwHFfozwe3"
 			]
 		}
 	},

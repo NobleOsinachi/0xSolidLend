@@ -48,7 +48,26 @@ contract MyContract {
         state = State.Active;
         return "Activation successful!";
     }
-    function isActive() public view returns (bool){
-        return state==State.Active;
+
+    function isActive() public view returns (bool) {
+        return state == State.Active;
+    }
+
+    struct Person {
+        string _firstName;
+        string _lastName;
+    }
+
+    // Person[] public people;
+    uint256 public peopleCount;
+
+    //use mapping instea
+    mapping(uint256 => Person) public people;
+
+    function addPerson(string memory _firstName, string memory _lastName)
+        public
+    {
+        // people.push(Person(_firstName, _lastName));
+        peopleCount += 1;
     }
 }
