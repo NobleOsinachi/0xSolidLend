@@ -78,6 +78,11 @@
 				"name": "people",
 				"outputs": [
 					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
 						"internalType": "string",
 						"name": "_firstName",
 						"type": "string"
@@ -175,11 +180,11 @@
 	},
 	"sources": {
 		"MyContract.sol": {
-			"keccak256": "0x8ac92139ad258541458ae23a8101bb0b2985027f1c6bc350c14106160623406e",
+			"keccak256": "0xba4e46f54cd3b90ffd4bd94123f4abf4c5305545c70f7de3b1b2064900a3bdff",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e6cddf127338ccbbe8c2d9b7655f9980c8dd4ea4b57ea86a2daa433e01162b12",
-				"dweb:/ipfs/QmRGEcHMpHX1jM72fpWBzDEEQsPS5gmAnekeDwHFfozwe3"
+				"bzz-raw://a7489d545d037d3c0e44aed267d850737cf449284df5019ec5d62341750c0679",
+				"dweb:/ipfs/QmcsHumq6CZnMU5qxyugiZgECxUANeG91ARqhiAXEP3WAx"
 			]
 		}
 	},

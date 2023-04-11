@@ -40,6 +40,13 @@ contract MyContract {
 
     State public state;
 
+    uint256 openingTime = 1681170000;
+
+    modifier onlyWhileOpen() {
+        require(block.timestamp >= openingTime);
+            _;
+    }
+
     constructor() {
         state = State.Waiting;
     }
@@ -54,20 +61,29 @@ contract MyContract {
     }
 
     struct Person {
+        uint256 _id;
         string _firstName;
         string _lastName;
     }
 
     // Person[] public people;
-    uint256 public peopleCount;
+    uint256 public peopleCount = 0;
 
-    //use mapping instea
+    //use mapping instead
     mapping(uint256 => Person) public people;
 
-    function addPerson(string memory _firstName, string memory _lastName)
-        public
+    function addPerson(
+        string memory _firstName, 
+        string memory _lastName
+        )
+        public onlyWhileOpen
     {
         // people.push(Person(_firstName, _lastName));
         peopleCount += 1;
+        people[peopleCount] = Person(peopleCount, _firstName, _lastName);
+
+        // now we can access based on id instead of index
+
+        msg.
     }
 }
