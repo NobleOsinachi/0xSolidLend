@@ -7,6 +7,11 @@ pragma solidity >0.5.1;
  * @custom:dev-run-script file_path
  */
 contract MyContract {
+    constructor()  {
+        state = State.Waiting;
+        owner = msg.sender;
+    }
+
     //works for get and set
     string public value = "my default value"; // value;
     string public stringValue = "my default value"; // value;
@@ -40,15 +45,26 @@ contract MyContract {
 
     State public state;
 
-    uint256 openingTime = 1681170000;
+    uint256 openingTime =  1681254150;
+
 
     modifier onlyWhileOpen() {
-        require(block.timestamp >= openingTime);
-            _;
+        require(block.timestamp >= openingTime, "TIME NEVER REACH BOSS");
+        _;
+    }
+    /// @dev The owner of the contract
+    /// @notice This variable is immutable
+    address public owner;
+
+    modifier onlyOwner() {
+        // require(msg.sender == owner);
+        require(msg.sender == owner, "Only the owner can add people");
+        _;
     }
 
-    constructor() {
-        state = State.Waiting;
+    function changeOwner(address _newOwner) public {
+        require(msg.sender == owner, "Only the owner can change the owner");
+        owner = _newOwner;
     }
 
     function activate() public returns (string memory) {
@@ -72,18 +88,21 @@ contract MyContract {
     //use mapping instead
     mapping(uint256 => Person) public people;
 
-    function addPerson(
-        string memory _firstName, 
-        string memory _lastName
-        )
-        public onlyWhileOpen
+    function addPerson(string memory _firstName, string memory _lastName)
+        public
+        onlyWhileOpen
+        onlyOwner
     {
         // people.push(Person(_firstName, _lastName));
-        peopleCount += 1;
+        incrementCount();
         people[peopleCount] = Person(peopleCount, _firstName, _lastName);
 
         // now we can access based on id instead of index
-
-        msg.
     }
+
+    function incrementCount() internal {
+        peopleCount += 1;
+    }
+
+    //only owner can call function
 }
