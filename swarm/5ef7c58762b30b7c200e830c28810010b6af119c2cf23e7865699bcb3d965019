@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.18+commit.87f61d96"
+		"version": "0.8.19+commit.7dd6d404"
 	},
 	"language": "Solidity",
 	"output": {
@@ -15,25 +15,6 @@
 				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "_buyer",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "_amount",
-						"type": "uint256"
-					}
-				],
-				"name": "Purchase",
-				"type": "event"
 			},
 			{
 				"inputs": [
@@ -73,10 +54,6 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
-			},
-			{
-				"stateMutability": "payable",
-				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -110,11 +87,11 @@
 	},
 	"sources": {
 		"SendEther.sol": {
-			"keccak256": "0x8ba061dcea1d1fa99b48d78660d9432abf8a73f2342998d8b739d59ec886ce04",
+			"keccak256": "0xe739112a4c99db5d371f250891e8c8624449a55dfedb362c48941c095ce74175",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://433191c54cb0e224f38e932f5abffe25fa5833b6c2b618a871b3af7b7122ea9f",
-				"dweb:/ipfs/QmXbbskmAS7Ckfz5KG8AWNSYxqznZKxfBSgMGPc2X9oLsH"
+				"bzz-raw://9c92a544635703379fb52afde3e2a6ef34d1f9210268c5f1c7a497e4ca67a99a",
+				"dweb:/ipfs/QmXcAdCu93U7d6a5p4ybUVm4b7LnBgG3LurHHkBTYHhtFs"
 			]
 		}
 	},
