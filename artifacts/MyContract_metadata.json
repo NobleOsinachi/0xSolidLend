@@ -42,6 +42,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_newOwner",
+						"type": "address"
+					}
+				],
+				"name": "changeOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "isActive",
 				"outputs": [
@@ -62,6 +75,19 @@
 						"internalType": "bool",
 						"name": "",
 						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -154,12 +180,21 @@
 			"details": "This is a Solidity smart contract written in the Ethereum blockchain programming language. It is named \"MyContract\" and contains two functions, \"set\" and \"get\", which allow a user to set and retrieve a string value, respectively. The contract is licensed under the MIT License and includes a custom development script that can be run with the command \"dev-run-script file_path\". When the contract is deployed, the initial value of the string is set to \"default value\".",
 			"kind": "dev",
 			"methods": {},
+			"stateVariables": {
+				"owner": {
+					"details": "The owner of the contract"
+				}
+			},
 			"title": "MyContract",
 			"version": 1
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {},
+			"methods": {
+				"owner()": {
+					"notice": "This variable is immutable"
+				}
+			},
 			"version": 1
 		}
 	},
@@ -180,11 +215,11 @@
 	},
 	"sources": {
 		"MyContract.sol": {
-			"keccak256": "0xba4e46f54cd3b90ffd4bd94123f4abf4c5305545c70f7de3b1b2064900a3bdff",
+			"keccak256": "0xb2e853a19d7eb3372906c8c811cb57f77eacff9858463fc01fa787eca5f0ec31",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a7489d545d037d3c0e44aed267d850737cf449284df5019ec5d62341750c0679",
-				"dweb:/ipfs/QmcsHumq6CZnMU5qxyugiZgECxUANeG91ARqhiAXEP3WAx"
+				"bzz-raw://a7b7e23cb7e14719a1ec404facda38a99e4ad9f97516e799bba90d53a6d2499c",
+				"dweb:/ipfs/QmdvUvarioWV2TV3supWpQYxcHqrsoX7WpXNZ5sfdpDfcq"
 			]
 		}
 	},
