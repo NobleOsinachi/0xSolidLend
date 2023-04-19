@@ -1,13 +1,37 @@
-# Solidity Learning Repo
-Welcome to my Solidity learning repository! This is where I'll be documenting my progress as I learn Solidity. By using commits to track my progress, I'll be able to look back at my journey and see how far I've come.
+# SolidLend
 
-## What I Expect to Gain
-I expect to gain a deep understanding of Solidity by documenting my progress via commits. By committing my code regularly, I'll be able to see how my code has evolved over time and identify areas where I need to improve.
+SolidLend is a Decentralized Finance (DeFi) application that allows users to lend, borrow, or trade cryptocurrencies using smart contracts.
 
-In addition to gaining technical skills, I also expect to gain a sense of accomplishment and satisfaction as I make progress in my Solidity learning journey. By documenting my progress and sharing it with others, I hope to inspire and motivate others who are also learning Solidity.
+## Features
 
-## How to Use This Repo
-This repo is organized by topics and concepts that I'm learning. Each topic has a corresponding folder, and within each folder, I'll be committing my code as I learn. You can browse the commits to see how my code has evolved over time, and you can also use the code as a reference or starting point for your own Solidity projects.
+- Lend cryptocurrency and earn interest.
+- Borrow cryptocurrency with collateral.
+- Trade cryptocurrency without relying on centralized exchanges.
 
-## Get Involved
-I welcome feedback, suggestions, and contributions from anyone who is interested in Solidity. If you see something that could be improved, please don't hesitate to create an issue or submit a pull request. Let's learn Solidity together!
+## Technologies Used
+
+- Solidity
+- Ethereum
+- Web3.js
+- Truffle
+
+## Installation
+
+1. Clone the repository.
+2. Install the dependencies using `npm install`.
+3. Deploy the smart contracts using `truffle migrate`.
+4. Start the application using `npm start`.
+
+## Usage
+
+1. Connect to the Ethereum network using a compatible wallet such as Metamask.
+2. Visit the application at [http://localhost:3000](http://localhost:3000).
+3. Select the desired action (lend, borrow, or trade) and follow the instructions on the screen.
+
+## Contributing
+
+Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
